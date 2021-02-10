@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TYF_Fish&leaf</title>
+    <link rel="shortcut icon" href="f_at_first_scene.png">
+    <style>
+      body {
+        background-color: #F9E5B4
+      }
+      #animation1{
+        position: fixed;
+        width: 40vw;
+        top: 190px;
+        left: 6vw;
+      }
+      #animation2{
+        position: fixed;
+        width: 40vw;
+        top: 130px;
+        left: 52vw;
+      }
+        #cover1{
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          width: 811px;
+          z-index:100;
+        }
+        #cover2{
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          width: 811px;
+          z-index:100;
+        }
+        #leaf{
+          cursor:pointer;
+          position:absolute;
+          left: 400px;
+          top: 350px;
+          width: 80px;
+          z-index:200
+        }
+        #leafs{
+          cursor:pointer;
+          position:absolute;
+          left: 390px;
+          top: 650px;
+          width: 70px;
+          z-index:40
+        }
+        #leafshadow{
+          cursor:pointer;
+          position:absolute;
+          left: 350px;
+          top: 450px;
+          width: 180px;
+          z-index:200
+        }
+        #fish{
+          cursor:pointer;
+          position:absolute;
+          left: 1100px;
+          top: 350px;
+          width: 100px;
+          z-index:200
+        }
+        #fishs{
+          cursor:pointer;
+          position:absolute;
+          left: 1130px;
+          top: 800px;
+          width: 70px;
+          z-index:40
+        }
+        #fishshadow{
+          cursor:pointer;
+          position:absolute;
+          left: 1070px;
+          top: 455px;
+          width: 190px;
+          z-index:200
+        }
+        #caption1{
+          display:none;
+          cursor:pointer;
+          position:absolute;
+          left: 280px;
+          top: 350px;
+          width: 300px;
+          z-index:200
+        }
+        #caption2{
+          display:none;
+          cursor:pointer;
+          position:absolute;
+          right: 250px;
+          top: 350px;
+          width: 300px;
+          z-index:200
+        }
+        #pointer{
+          cursor: pointer;
+          position: fixed;
+          left: 30px;
+          top: 30px;
+          width: 45px;
+          z-index:1000;
+        }
+      #fish:hover{
+    transition: 5s;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate (360deg);
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="animation.js"></script>
+  </head>
+  <body>
+    <video id=animation1 src="animation1.mp4" controls></video>
+    <video id=animation2 src="animation2.mp4" controls></video>
+    <img id=cover1 src="coverg.png">
+    <img id=cover2 src="coverp.png">
+    <img id=leaf src="leaf.png">
+    <img id=leafs src="returng.png">
+    <img id=leafshadow src="leafshadow.png">
+    <img id=fish src="fish.png">
+    <img id=fishs src="returnp.png">
+    <img id=fishshadow src="fishshadow.png">
+    <img id=caption1 src="caption1.png">
+    <img id=caption2 src="caption2.png">
+    <a href=mainpage.html><img id=pointer src="pointer.png"></a>
+  </body>
+</html>

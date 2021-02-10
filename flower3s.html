@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #0C0000
+      }
+        #pointer{
+          cursor: pointer;
+          position: fixed;
+          left: 5%;
+          top: 5%;
+          transform: translate(-50%, -50%);
+          max-width: 5%;
+          max-height: 5%;
+          z-index: -10
+        }
+        #lab1{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 60%;
+          max-height: 60%;
+          z-index: -30
+        }
+        #f1{
+          cursor: pointer;
+          position: absolute;
+          left: 58%;
+          top: 38%;
+          transform: translate(-50%, -50%);
+          max-width: 2%;
+          max-height: 2%;
+          z-index: 10
+        }
+        #f2{
+          cursor: pointer;
+          position: absolute;
+          left: 57%;
+          top: 39%;
+          transform: translate(-50%, -50%);
+          max-width: 1%;
+          max-height: 1%;
+          z-index: 10
+        }
+        #f3{
+          cursor: pointer;
+          position: absolute;
+          left: 57.5%;
+          top: 37%;
+          transform: translate(-50%, -50%);
+          max-width: 2%;
+          max-height: 2%;
+          z-index: 10
+        }
+        #f4{
+            cursor: pointer;
+            position: absolute;
+            left: 57%;
+            top: 39%;
+            transform: translate(-50%, -50%);
+            max-width: 2.5%;
+            max-height: 2.5%;
+            z-index: 10
+          }
+          #f5{
+            cursor: pointer;
+            position: absolute;
+            left: 57%;
+            top: 37%;
+            transform: translate(-50%, -50%);
+            max-width: 2%;
+            max-height: 2%;
+            z-index: 10
+          }
+          #f6{
+            cursor: pointer;
+            position: absolute;
+            left: 56.5%;
+            top: 38%;
+            transform: translate(-50%, -50%);
+            max-width: 1.5%;
+            max-height: 1.5%;
+            z-index: 10
+          }
+          #chestdoor{
+            cursor:pointer;
+            position:absolute;
+            left: 767px;
+            top: 298px;
+            max-width: 11%;
+            max-height: 11%;
+            z-index: -10
+          }
+          #heartjar{
+            cursor:pointer;
+            position:absolute;
+            left: 359px;
+            top: 160px;
+            max-width: 16%;
+            max-height: 16%
+          }
+          #squidjar{
+            cursor:pointer;
+            position:absolute;
+            left: 358px;
+            top: 306px;
+            max-width: 18%;
+            max-height: 18%
+          }
+          #bearjar{
+            cursor:pointer;
+            position:absolute;
+            left: 845px;
+            top: 298px;
+            max-width: 17.3%;
+            max-height: 17.3%
+          }
+          #book{
+            cursor:pointer;
+            position:absolute;
+            left: 554px;
+            top: 357px;
+            max-width: 23.5%;
+            max-height: 23.5%
+          }
+          #f7{
+            cursor:pointer;
+            position:absolute;
+            left: 804px;
+            top: 480px;
+            max-width: 3%;
+            max-height: 3%
+          }
+          #f8{
+            cursor:pointer;
+            position:absolute;
+            left: 795px;
+            top: 475px;
+            max-width: 3%;
+            max-height: 3%
+          }
+          #f9{
+            cursor:pointer;
+            position:absolute;
+            left: 785px;
+            top: 465px;
+            max-width: 2.5%;
+            max-height: 2.5%
+          }
+          #stone{
+            cursor:pointer;
+            position:absolute;
+            left: 752px;
+            top: 459px;
+            max-width: 7.5%;
+            max-height: 7.5%
+          }
+          #squarejar{
+            cursor:pointer;
+            position:absolute;
+            left: 531px;
+            top: 204.5px;
+            max-width: 15%;
+            max-height: 15%
+          }
+          #note1{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+            max-width: 30%;
+            max-height: 30%
+          }
+          #note2{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            left: 35%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            max-width: 30%;
+            max-height: 30%
+          }
+          #newspaper{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            left: 65%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            max-width: 30%;
+            max-height: 30%
+          }
+          #wanted{
+            display: none;
+            cursor: pointer;
+            position: absolute;
+            left: 56%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 30%;
+            max-height: 30%
+          }
+          #blackblock{
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 150%;
+            max-height: 90%
+          }  #wanted:hover{
+              z-index:100;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              max-width: 50%;
+              max-height: 50%
+            }
+            #newspaper:hover{
+              z-index:100;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              max-width: 50%;
+              max-height: 50%
+            }
+            #note1:hover{
+              z-index:100;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              max-width: 50%;
+              max-height: 50%
+            }
+            #note2:hover{
+              z-index:100;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              max-width: 50%;
+              max-height: 50%
+            }
+            #return{
+              cursor:pointer;
+              position:absolute;
+              left: 1000px;
+              top: 100px;
+              max-width: 5%;
+              max-height: 5%
+            }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="flower3.js"></script>
+  </head>
+  <body>
+    <img id=lab1 src="lab1.png">
+    <a href="mainpage.html"><img id=pointer src="pointer.png"></a>
+    <img id=f1 src="f_at_first_scene.png">
+    <img id=f2 src="f_at_first_scene.png">
+    <img id=f3 src="f_at_first_scene.png">
+    <img id=f4 src="f_at_first_scene.png">
+    <img id=f5 src="f_at_first_scene.png">
+    <img id=f6 src="f_at_first_scene.png">
+    <img id=chestdoor src="chestdoor.png">
+    <img id=heartjar src="heartjar.png">
+    <img id=squidjar src="squidjar.png">
+    <img id=bearjar src="bearjar.png">
+    <img id=book src="book.png">
+    <img id=f7 src="f_at_first_scene.png">
+    <img id=f8 src="f_at_first_scene.png">
+    <img id=f9 src="f_at_first_scene.png">
+    <img id=stone src="stone.png">
+    <img id=squarejar src="squarejar.png">
+    <img id=blackblock src="blackblock.png">
+    <img id=wanted src="wanted.png">
+    <img id=note1 src="note1.png">
+    <img id=newspaper src="newspaper.png">
+    <img id=note2 src="note2.png">
+    <img id=return src="flower1.png">
+  </body>
+</html>

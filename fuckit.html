@@ -1,0 +1,743 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TYF_My Alchemy Family</title>
+    <link rel="shortcut icon" href="f_at_first_scene.png">
+    <style>
+      body {
+        background-color: #0C0000
+      }
+      #pointer{
+        cursor: pointer;
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        width: 45px;
+        z-index:-10
+      }
+      #lab1{
+        position: absolute;
+        left: 320px;
+        top: 150px;
+        width: 992px;
+        z-index:-300
+      }
+      #logo{
+        position: absolute;
+        left: 320px;
+        top: 150px;
+        width: 992px;
+        z-index:300
+      }
+      #start{
+        cursor: pointer;
+        position: absolute;
+        left: 830px;
+        top: 370px;
+        width: 150px;
+        z-index:300;
+      }
+      #f1{
+        cursor: pointer;
+        position: absolute;
+        left: 935px;
+        top: 313px;
+        width: 18px;
+        z-index:10
+      }
+      #f2{
+        cursor: pointer;
+        position: absolute;
+        left: 930px;
+        top: 308px;
+        width: 16px;
+        z-index:10
+      }
+      #f3{
+        cursor: pointer;
+        position: absolute;
+        left: 915px;
+        top: 310px;
+        width: 20px;
+        z-index: 10
+      }
+      #f4{
+          cursor: pointer;
+          position: absolute;
+          left: 937px;
+          top: 323px;
+          width: 23px;
+          z-index: 10
+        }
+        #f5{
+          cursor: pointer;
+          position: absolute;
+          left: 924px;
+          top: 324px;
+          width: 20px;
+          z-index: 10
+        }
+        #f6{
+          cursor: pointer;
+          position: absolute;
+          left: 930px;
+          top: 339px;
+          width:15px;
+          z-index: 10
+        }
+        #chestdoor{
+          cursor:pointer;
+          position:absolute;
+          left: 971px;
+          top: 337px;
+          width: 87px;
+          z-index: 20
+        }
+        #heartjar{
+          cursor:pointer;
+          position:absolute;
+          left: 443px;
+          top: 168px;
+          width: 135px;
+          z-index:0
+        }
+        #squidjar{
+          cursor:pointer;
+          position:absolute;
+          left: 438px;
+          top: 353px;
+          width: 143px;
+          z-index:0
+        }
+        #bearjar{
+          cursor:pointer;
+          position:absolute;
+          left: 1072px;
+          top: 340px;
+          width: 140px;
+          z-index:0
+        }
+        #bearjar2{
+          display:none;
+          cursor:pointer;
+          position:absolute;
+          left: 1072px;
+          top: 340px;
+          width: 140px;
+          z-index:0
+        }
+        #book{
+          cursor:pointer;
+          position:absolute;
+          left: 699px;
+          top: 411px;
+          width: 239px;
+          z-index:0
+        }
+        #f7{
+          cursor:pointer;
+          position:absolute;
+          left: 1014px;
+          top: 560px;
+          width: 23px;
+        }
+        #f8{
+          cursor:pointer;
+          position:absolute;
+          left: 1015px;
+          top: 555px;
+          width: 25px;
+        }
+        #f9{
+          cursor:pointer;
+          position:absolute;
+          left: 1005px;
+          top: 545px;
+          width: 20px;
+        }
+        #stone{
+          cursor:pointer;
+          position:absolute;
+          left: 945px;
+          top: 549px;
+          width: 133px;
+          z-index:0
+        }
+        #note1{
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          left: 30%;
+          top: 30%;
+          transform: translate(-50%, -50%);
+          max-width: 30%;
+          max-height: 30%;
+          z-index:40
+        }
+        #note2{
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          left: 35%;
+          top: 40%;
+          transform: translate(-50%, -50%);
+          max-width: 30%;
+          max-height: 30%;
+          z-index:40
+        }
+        #newspaper{
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          left: 65%;
+          top: 45%;
+          transform: translate(-50%, -50%);
+          max-width: 30%;
+          max-height: 30%;
+          z-index:40
+        }
+        #wanted{
+          display: none;
+          cursor: pointer;
+          position: absolute;
+          left: 56%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 30%;
+          max-height: 30%;
+          z-index:40
+        }
+        #blackblock{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #blackblock2{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #blackblock3{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #blackblock4{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #blackblock5{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #blackblock6{
+          display: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #blackblock7{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;;
+          z-index:40
+        }
+        #return{
+          display: none;
+          cursor:pointer;
+          position:absolute;
+          left: 1300px;
+          top: 100px;
+          max-width: 5%;
+          max-height: 5%;
+          z-index:40
+        }
+        #key{
+          cursor:pointer;
+          position:absolute;
+          left: 485px;
+          top: 209px;
+          width: 70px;
+          z-index:-10
+        }
+        #dairy{
+          cursor:pointer;
+          position:absolute;
+          left: 967.5px;
+          top: 346px;
+          width: 55px;
+          z-index: 0
+        }
+         #wanted:hover{
+            z-index:100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50%;
+            max-height: 50%;
+            z-index:50
+          }
+          #newspaper:hover{
+            z-index:100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50%;
+            max-height: 50%
+          }
+          #note1:hover{
+            z-index:100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50%;
+            max-height: 50%
+          }
+          #note2:hover{
+            z-index:100;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 50%;
+            max-height: 50%
+          }
+          #corner{
+            display:none;
+            position: absolute;
+            left: 430px;
+            top: 100px;
+            width: 730px;
+            z-index:40
+          }
+          #bible{
+            display:none;
+            position: absolute;
+            cursor: pointer;
+            left: 730px;
+            top: 380px;
+            width: 160px;
+            z-index:40
+          }
+          #doodle{
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:770px;
+            top:430px;
+            width:150px;
+            transform: rotate(40deg);
+            z-index:40
+          }
+          #doodle2{
+            display:none;
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:460px;
+            top:270px;
+            width:650px;
+            z-index:200
+          }
+          #torn1{
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:725px;
+            top:510px;
+            width:150px;
+            transform: rotate(70deg);
+            z-index:40
+          }
+          #torn1_2{
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:460px;
+            top:200px;
+            width:650px;
+            z-index:200
+          }
+          #memorial{
+            display: none;
+            position: absolute;
+            left: 430px;
+            top: 100px;
+            width: 730px;
+            z-index:40
+          }
+          #torn2{
+            display: none;
+            position: absolute;
+            cursor:pointer;
+            left:755px;
+            top:390px;
+            width:80px;
+            z-index:40
+          }
+          #photo{
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            left: 730px;
+            top: 380px;
+            width: 160px;
+            z-index:40
+          }
+          #torn2_2{
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:460px;
+            top:200px;
+            width:650px;
+            z-index:200
+          }
+          #photo2{
+            display:none;
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:460px;
+            top:270px;
+            width:650px;
+            z-index:200
+          }
+          #flowerball{
+            display:none;
+            position: absolute;
+            cursor:pointer;
+            left:665px;
+            top:600px;
+            width:280px;
+            z-index:40
+          }
+          #toflowerball{
+            display: none;
+            cursor:pointer;
+            position:absolute;
+            left: 780px;
+            top: 650px;
+            max-width: 5%;
+            max-height: 5%;
+            z-index:40
+          }
+          #squidjar2{
+            display:none;
+            cursor:pointer;
+            position:absolute;
+            left: 438px;
+            top: 353px;
+            width: 143px;
+            z-index:0
+            }
+          #denial{
+              display: none;
+              position: absolute;
+              left: 430px;
+              top: 100px;
+              width: 730px;
+              z-index:40
+            }
+        #blueeye{
+          display: none;
+          cursor:pointer;
+          position:absolute;
+          left: 400px;
+          top: 203px;
+          width: 143px;
+          z-index:40
+        }
+        #browneye{
+          display: none;
+          cursor:pointer;
+          position:absolute;
+          left: 538px;
+          top: 500px;
+          width: 143px;
+          transform: rotate(90deg);
+          z-index:40
+        }
+        #darkeye{
+          display: none;
+          cursor:pointer;
+          position:absolute;
+          left: 638px;
+          top: 253px;
+          width: 143px;
+          transform: rotate(180deg);
+          z-index: 40
+        }
+        #purpleeye{
+            display: none;
+            cursor:pointer;
+            position:absolute;
+            left: 800px;
+            top: 483px;
+            width: 143px;
+            transform: rotate(90deg);
+            z-index: 40
+          }
+          #greeneye{
+              display: none;
+              cursor:pointer;
+              position:absolute;
+              left: 978px;
+              top: 253px;
+              width: 143px;
+              z-index: 40
+            }
+          #match{
+              cursor:pointer;
+              position:absolute;
+              left: 859px;
+              top: 350px;
+              width: 33px;
+              transform: rotate(10deg);
+              z-index:0
+            }
+            #matchcover{
+                cursor:pointer;
+                position:absolute;
+                left: 833.5px;
+                top: 352px;
+                width: 77px;
+                z-index:0
+              }
+          #darkroom{
+            display: none;
+            position: absolute;
+            left: 430px;
+            top: 100px;
+            width: 730px;
+            z-index:40
+            }
+          #marrydiary{
+            display: none;
+              cursor:pointer;
+              position:absolute;
+              left: 400px;
+              top: 203px;
+              width: 143px;
+              z-index:40
+            }
+            #janediary{
+              display: none;
+              cursor:pointer;
+              position:absolute;
+              left: 538px;
+              top: 500px;
+              width: 143px;
+              z-index:40
+            }
+            #samdiary{
+              display: none;
+              cursor:pointer;
+              position:absolute;
+              left: 638px;
+              top: 213px;
+              width: 143px;
+              z-index: 40
+            }
+            #tomdiary{
+              display: none;
+                cursor:pointer;
+                position:absolute;
+                left: 800px;
+                top: 483px;
+                width: 143px;
+                z-index: 40
+              }
+              #cristdiary{
+                  display: none;
+                  cursor:pointer;
+                  position:absolute;
+                  left: 978px;
+                  top: 253px;
+                  width: 143px;
+                  z-index: 40
+                }
+              #marrydiary2{
+                display: none;
+                position: absolute;
+                cursor:pointer;
+                left:550px;
+                top:150px;
+                width:500px;
+                z-index:200
+              }
+              #tomdiary2{
+                display: none;
+                position: absolute;
+                cursor:pointer;
+                left:550px;
+                top:150px;
+                width:500px;
+                z-index:200
+              }
+              #samdiary2{
+                display: none;
+                position: absolute;
+                cursor:pointer;
+                left:550px;
+                top:150px;
+                width:500px;
+                z-index:200
+              }
+              #janediary2{
+                display: none;
+                position: absolute;
+                cursor:pointer;
+                left:550px;
+                top:160px;
+                width:500px;
+                z-index:200
+              }
+              #cristdiary2{
+                  display: none;
+                  cursor:pointer;
+                  position:absolute;
+                  left:550px;
+                  top:220px;
+                  width:500px;
+                  z-index:200
+                }
+                #clicktoenter{
+                    display: none;
+                    cursor:pointer;
+                    position:absolute;
+                    left:650px;
+                    top:446px;
+                    width:300px;
+                    z-index:300
+                  }
+                  #musiccontrol{
+                    cursor: pointer;
+                    position: fixed;
+                    left: 24px;
+                    top: 105px;
+                    width: 45px;
+                  }
+                  #musichelper{
+                    position: fixed;
+                    top:95px;
+                    left:85px
+                  }
+                  #audio1{
+                    position: fixed;
+                    width: 5vw;
+                    top: 100px;
+                    right: 89vw;
+                  }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="fuckit.js"></script>
+  </head>
+  <body>
+    <img id=lab1 src="lab1.png">
+    <a href="mainpage.html"><img id=pointer src="pointer.png"></a>
+    <img id=f1 src="f_at_first_scene.png">
+    <img id=f2 src="f_at_first_scene.png">
+    <img id=f3 src="f_at_first_scene.png">
+    <img id=f4 src="f_at_first_scene.png">
+    <img id=f5 src="f_at_first_scene.png">
+    <img id=f6 src="f_at_first_scene.png">
+    <img id=chestdoor src="chestdoor.png">
+    <img id=heartjar src="heartjar.png">
+    <img id=squidjar src="squidjar.png">
+    <img id=bearjar src="bearjar.png">
+    <img id=squidjar2 src="squidjar.png">
+    <img id=bearjar2 src="bearjar.png">
+    <img id=book src="book.png">
+    <img id=f7 src="f_at_first_scene.png">
+    <img id=f8 src="f_at_first_scene.png">
+    <img id=f9 src="f_at_first_scene.png">
+    <img id=stone src="stone.png">
+    <img id=blackblock src="blackblock.png">
+    <img id=wanted src="wanted.png">
+    <img id=note1 src="note1.png">
+    <img id=newspaper src="newspaper.png">
+    <img id=note2 src="note2.png">
+    <img id=return src="return.png">
+    <img id=key src="key.png">
+    <img id=dairy src="dairy.png">
+    <img id=corner src="corner.png">
+    <img id=doodle src="doodle.png">
+    <img id=torn1 src="torn1.png">
+    <img id=bible src="bible.png">
+    <img id=blackblock2 src="blackblock.png">
+    <img id=doodle2 src="doodle.png">
+    <img id=blackblock3 src="blackblock.png">
+    <img id=torn1_2 src="torn1.png">
+    <img id=memorial src="memorial.png">
+    <img id=torn2 src="torn2.png">
+    <img id=photo src="photo.png">
+    <img id=flowerball src="flowerball.png">
+    <img id=blackblock4 src="blackblock.png">
+    <img id=blackblock5 src="blackblock.png">
+    <img id=torn2_2 src="torn2.png">
+    <img id=photo2 src="photo.png">
+    <img id=toflowerball src="f_at_first_scene.png">
+    <img id=denial src="denial.png">
+    <img id=blueeye src="blueeye.gif">
+    <img id=browneye src="browneye.gif">
+    <img id=darkeye src="darkeye.gif">
+    <img id=purpleeye src="purpleeye.gif">
+    <img id=greeneye src="greeneye.gif">
+    <img id=match src="match.png">
+    <img id=matchcover src="matchcover.png">
+    <img id=darkroom src="darkroom.png">
+    <img id=marrydiary src="marrydiary.png">
+    <img id=janediary src="janediary.png">
+    <img id=samdiary src="samdiary.png">
+    <img id=tomdiary src="tomdiary.png">
+    <img id=cristdiary src="cristdiary.png">
+    <img id=blackblock6 src="blackblock.png">
+    <img id=marrydiary2 src="marrydiary.png">
+    <img id=janediary2 src="janediary.png">
+    <img id=samdiary2 src="samdiary.png">
+    <img id=tomdiary2 src="tomdiary.png">
+    <img id=cristdiary2 src="cristdiary.png">
+    <a href="finalpage.html" target="_blank" rel="noopener noreferrer"><img id=clicktoenter src="clicktoenter.png"></a>
+    <img id=blackblock7 src="blackblock.png">
+    <img id=logo src="logo.png">
+    <img id=start src="start.png">
+    <audio controls loop autoplay id=audio1 src="broken.mp3"></audio>
+    <img id=musiccontrol src="musiccontrol.png">
+    <img id=musichelper src="musichelper.png">
+  </body>
+</html>

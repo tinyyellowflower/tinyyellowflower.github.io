@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TYF_Solaris</title>
+    <link rel="shortcut icon" href="f_at_first_scene.png">
+    <style>
+      body {
+        background-color: #000000
+      }
+      #c5{
+        cursor: pointer;
+        position: absolute;
+        left: 330px;
+        top: 8px;
+        width: 920px;
+        z-index:-300
+      }
+      #c5_2{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 330px;
+        top: 8px;
+        width: 920px;
+        z-index:-300
+      }
+      #c4{
+        cursor: pointer;
+        position: absolute;
+        left: 433px;
+        top: 107px;
+        width: 720px;
+        z-index:-200
+      }
+      #c4_2{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 433px;
+        top: 107px;
+        width: 720px;
+        z-index:-200
+      }
+      #c3{
+        cursor: pointer;
+        position: absolute;
+        left: 534px;
+        top: 207px;
+        width: 520px;
+        z-index:-200
+      }
+      #c3_2{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 534px;
+        top: 207px;
+        width: 522px;
+        z-index:-200
+      }
+      #decor{
+        position: absolute;
+        left: 583px;
+        top: 257px;
+        width: 420px;
+        z-index:-200
+      }
+      #c2{
+        cursor: pointer;
+        position: absolute;
+        left: 669px;
+        top: 339px;
+        width: 250px;
+        z-index:-100
+      }
+      #c2_2{
+        cursor: pointer;
+        position: absolute;
+        left: 669px;
+        top: 339px;
+        width: 250px;
+        z-index:-100
+        display:none;
+      }
+      #innerc{
+        cursor: pointer;
+        position: absolute;
+        left: 694px;
+        top: 364px;
+        width: 200px;
+        z-index:0
+      }
+      #innerc2{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 694px;
+        top: 364px;
+        width: 200px;
+        z-index:0
+      }
+      #home{
+        cursor: pointer;
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        width: 45px;
+        z-index:-200
+      }
+      #myVideo {
+        display:none;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:100;
+      }
+      #myVideo2 {
+        display:none;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:100;
+      }
+      #myVideo3 {
+        display:none;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:100;
+      }
+      #myVideo4 {
+        display:none;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:100;
+      }
+      #blackbutton{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 694px;
+        top: 364px;
+        width: 200px;
+        z-index:200
+      }
+      #blackbutton2{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 694px;
+        top: 364px;
+        width: 200px;
+        z-index:200
+      }
+      #blackbutton3{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 694px;
+        top: 364px;
+        width: 200px;
+        z-index:200
+      }
+      #blackbutton4{
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 694px;
+        top: 364px;
+        width: 200px;
+        z-index:200
+      }
+      #song{
+        display:none;
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 460px;
+        top: 80px;
+        width: 700px;
+        z-index:200
+      }
+      #song2{
+        display:none;
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 460px;
+        top: 150px;
+        width: 700px;
+        z-index:200
+      }
+      #song3{
+        display:none;
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 460px;
+        top: 80px;
+        width: 700px;
+        z-index:200
+      }
+      #song4{
+        display:none;
+        cursor: pointer;
+        display:none;
+        position: absolute;
+        left: 460px;
+        top: 80px;
+        width: 700px;
+        z-index:200
+      }
+      #pointer{
+        display:none;
+        cursor: pointer;
+        position: fixed;
+        left: 30px;
+        top: 30px;
+        width: 45px;
+        z-index:200
+      }
+      #solarislogo{
+        cursor: pointer;
+        position: absolute;
+        left: 754px;
+        top: 454px;
+        width: 80px;
+        z-index:100
+      }
+      #solarislogo2{
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        left: 754px;
+        top: 454px;
+        width: 80px;
+        z-index:100
+      }
+      #solarislogo3{
+        cursor: pointer;
+        position: absolute;
+        left: 754px;
+        top: 454px;
+        width: 80px;
+        z-index:0
+      }
+      #solarislogo4{
+        display:none;
+        cursor: pointer;
+        position: absolute;
+        left: 754px;
+        top: 454px;
+        width: 80px;
+        z-index:0
+      }
+      #blackblock {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:100;
+      }
+      #musiccontrol{
+        cursor: pointer;
+        position: fixed;
+        left: 24px;
+        top: 105px;
+        width: 45px;
+      }
+      #musichelper2{
+        position: fixed;
+        top:95px;
+        left:75px
+      }
+      #bgm2{
+        position: fixed;
+        width: 5vw;
+        top: 100px;
+        right: 89vw;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="solaris.js"></script>
+  </head>
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="video1.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="myVideo2">
+      <source src="video2.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="myVideo3">
+      <source src="video3.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop id="myVideo4">
+      <source src="video4.mp4" type="video/mp4">
+    </video>
+    <img id=c5 src="c5.png">
+    <img id=c5_2 src="c5_2.gif">
+    <img id=c4 src="c4.png">
+    <img id=c4_2 src="c4_2.gif">
+    <img id=c3 src="c3.png">
+    <img id=c3_2 src="c3_2.gif">
+    <img id=decor src="decor.png">
+    <img id=c2 src="c2.png">
+    <img id=c2_2 src="c2_2.png">
+    <img id=innerc src="innerc.png">
+    <img id=innerc2 src="innerc2.gif">
+    <img id=song src="song.png">
+    <img id=song2 src="song2.png">
+    <img id=song3 src="song3.png">
+    <img id=song4 src="song4.png">
+    <img id=blackbutton src="blackbutton.png">
+    <img id=blackbutton2 src="blackbutton.png">
+    <img id=blackbutton3 src="blackbutton.png">
+    <img id=blackbutton4 src="blackbutton.png">
+    <a href=mainpage.html><img id=home src="pointer.png"></a>
+    <img id=pointer src="pointer.png">
+    <img id=blackblock src="blackblock.png">
+    <img id=solarislogo src="solarislogo.png">
+    <img id=solarislogo3 src="solarislogo.png">
+    <img id=solarislogo2 src="solarislogo2.png">
+    <img id=solarislogo4 src="solarislogo2.png">
+    <audio controls loop autoplay id=bgm2 src="bgm.mp3"></audio>
+    <img id=musiccontrol src="musiccontrol.png">
+    <img id=musichelper2 src="musichelper2.png">
+  </body>
+</html>
